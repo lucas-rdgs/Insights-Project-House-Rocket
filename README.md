@@ -12,7 +12,7 @@ This project contains scripts that provides a business solution regarding real e
 <p>On analysing a property we observe several attributes such as total area, number of floors and rooms, year of construction and renovation, zipcode and many others. Those pieces of information make the properties more os less attractive to buyers and owners and, in addition to the time of the year, impact significantly its prices.</p>
 <p>Thus, the goal of this project is provide the business partners the answer of three main questions:<br/>
 > s<br/>
-> aaa</p>
+> aaaaaa</p>
 
 ## 2. Solucion Strategy
 
