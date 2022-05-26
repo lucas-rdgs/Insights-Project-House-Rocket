@@ -10,11 +10,16 @@ This project contains scripts that provides a business solution regarding real e
 
 ### 1.2 XXX
 <p>On analysing a property we observe several attributes such as total area, number of floors and rooms, year of construction and renovation, zipcode and many others. Those pieces of information make the properties more os less attractive to buyers and owners and, in addition to the time of the year, impact significantly its prices.</p>
-<p>Thus, the goal of this project is provide the business partners the answer of three main questions:<br/>
-> s<br/>
-> aaaaaa</p>
+<p>Thus, the goal of this project is provide the business partners the answer of three main questions:</p>
 
-## 2. Solucion Strategy
+ >  - Which properties shoud House Rocket purchase and for what price?<br/>
+ >  - When and for how much should the company buy its houses?
+ >  - Should House Rocket renovate any property to increase its price? If affirmative, what renovations should be done and what is the increment in price of each improvement?
+
+### 1.3 Data Overvies
+ - 1.3.1 Data Overview: what are the data of the dataset? What are the attributes of the properties? How many houses are available for purchasing? 
+
+## 2. Solution Strategy
 
 ## 3. Top X Data Insights
 
