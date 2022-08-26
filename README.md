@@ -222,6 +222,8 @@ Os relatórios terão filtros para exploração dos dados.
 
 [<img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/PyCharm_Icon.svg" style="height: 50px" align="left"/>](https://www.jetbrains.com/pt-br/pycharm/)
 
+[<img src="https://freepikpsd.com/file/2019/10/Python-PNG-File.png" style="height: 50px" align="left"/>](https://www.python.org/)
+                                                                                                                  
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png" style="height: 50px" align="left"/>](https://pandas.pydata.org/)
 
 [<img src="https://geopandas.org/en/latest/_images/geopandas_logo.png" style="height: 40px" align="left"/>](https://geopandas.org/en/stable/)<br/><br/><br/>
@@ -234,4 +236,4 @@ Os relatórios terão filtros para exploração dos dados.
                                                                                                                     
 ## 9. Sobre o autor
 Olá! Meu nome é Lucas Rodrigues.<br/>
-Conecte-se comigo no meu [Linkedin](https://www.linkedin.com/in/lucasrodrigues3/)
+Conecte-se comigo no meu [Linkedin](https://www.linkedin.com/in/lucasrodrigues3/).
