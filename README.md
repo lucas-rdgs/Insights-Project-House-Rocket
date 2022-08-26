@@ -5,19 +5,21 @@
 ## 1. Questão de negócio
 
 ### 1.1. Sobre a empresa
-<p style="text-align: justify">A House Rocket é uma empresa digital fictícia de empreendimentos imobiliários. Seu modelo de negócios se define por encontrar oportunidades de compra e venda de imóveis no estado de Washington, EUA, através de tecnologia. A principal estratégia da companhia é a compra de imóveis com ótima localização e preços baixos para então revendê-los a preços com altas margens de lucro, passando em vezes por processos de renovações.</p>
+<p align="justify">A House Rocket é uma empresa digital fictícia de empreendimentos imobiliários. Seu modelo de negócios se define por encontrar oportunidades de compra e venda de imóveis no estado de Washington, EUA, através de tecnologia. A principal estratégia da companhia é a compra de imóveis com ótima localização e preços baixos para então revendê-los a preços com altas margens de lucro, passando em vezes por processos de renovações.</p>
 
 ### 1.2. Sobre o projeto
-<p style="text-align: justify">Ao se analizar uma propriedade, observa-se vários atributos tais como área total construída, números de quartos, banheiros e andares, anos de construção e reforma, código postais e outros. Tais informações tornam as propriedades mais ou menos atrativas a compradores e seus donos e, levando em conta também a sazonalidade, impactam de maneira significante seus preços.</p>
-<p style="text-align: justify">Assim, o objetivo deste projeto é fornecer aos parceiros de negócio as respostas a duas questões chave:</p>
+<p align="justify">Ao se analizar uma propriedade, observa-se vários atributos tais como área total construída, números de quartos, banheiros e andares, anos de construção e reforma, código postais e outros. Tais informações tornam as propriedades mais ou menos atrativas a compradores e seus donos e, levando em conta também a sazonalidade, impactam de maneira significante seus preços.</p>
+<p align="justify">Assim, o objetivo deste projeto é fornecer aos parceiros de negócio as respostas a duas questões chave:</p>
 
 > - Quais imóveis deveriam ser compradas pela House Rocket?
 > - Quando e por qual preço os imóveis devem ser postos à venda?
 
+Clique no ícone para acessar os dashboards desenvolvidos neste projeto na plataforma Heroku:<br/> 
+[<img src="https://blog.back4app.com/wp-content/uploads/2020/12/O-que-e-o-Heroku.png" style="height: 50px"/>]([http://heroku.com](https://house-rocket-company-lr.herokuapp.com/))<br/>
 
 ### 1.3. Visão geral do conjunto de dados
 #### Conjunto de dados bruto
-<p style="text-align: justify">O conjunto de dados bruto, ou seja, que não foi modificado por nenhum processo de limpeza e sem ação de nenhuma premissa, possui 21613 linhas e 21 colunas.</p>
+<p align="justify">O conjunto de dados bruto, ou seja, que não foi modificado por nenhum processo de limpeza e sem ação de nenhuma premissa, possui 21613 linhas e 21 colunas.</p>
 
 Estas 21 colunas são descritas abaixo:
 
@@ -46,7 +48,7 @@ Estas 21 colunas são descritas abaixo:
 | **sqft_lot15**    | Área, em pés quadrados, da área total dos 15 vizinhos mais próximos                                                                                                           |
 
 ## 2. Premissas do negócio
-<p style="text-align: justify">Para a elaboração deste trabalho, as seguintes premissas são adotadas:</p>
+<p align="justify">Para a elaboração deste trabalho, as seguintes premissas são adotadas:</p>
 
 - O conjunto de dados não possui linhas com dados faltantes (NaN, '-' ou similares);
 - A coluna 'bathrooms' possui valores decimais, porque é considerado que "3/4 de banheiro" é um cômodo que não possui ou chuveiro ou banheira, sendo assim um banheiro recebe valor 1 quando possui pia, vaso sanitário, chuveiro e banheira. Neste trabalho serão considerados todos os banheiros como completos, e por isso os valores serão arredondados para o próximo valor inteiro;
@@ -65,8 +67,6 @@ Serão fornecidos dois relatórios:
 Ambos os relatórios estarão presentes em um único dashboard do Streamlit contendo:
 
 - Tabela com informações sobre os imóveis e recomendação de compra e venda;
-- Tabela com preços médios por código postal;
-- Tabela com estatísticas descritivas das recomendações de compra e venda;
 - Mapas descrevendo as densidades do portfólio e dos preços;
 - Gráficos plotando os preços médios por anos e dias, ao longo da série histórica das listas de compra e venda;
 - Histograma da distribuição dos preços de compra e venda;
@@ -76,7 +76,7 @@ Os relatórios terão filtros para exploração dos dados.
 
 #### Processo (Passo-a-passo)
 <strong>1. Extração dos dados (Extraction)</strong>
-- Carregar o conjunto de dados bruto com a biblioteca pandas e armazenar em uma variável.
+- Carregar o conjunto de dados bruto com a biblioteca Pandas e armazenar em uma variável.
 
 <strong>2. Transformação dos dados (Transformation)</strong>
 
@@ -126,7 +126,8 @@ Os relatórios terão filtros para exploração dos dados.
 
 2.5.2. Mapas
 - Criar mapa com a densidade de portfólio;
-- Criar mapa com a densidade de preços.
+- Criar mapa com a densidade de preços;
+- Criar mapa com a densidade do faturamento de cada imóvel, no dashboard de vendas.
 
 2.5.3. Gráficos
 - Atributos comerciais:
@@ -164,10 +165,10 @@ Os relatórios terão filtros para exploração dos dados.
 
 
 
-## 4. Teste de hióteses e principais insights
+## 4. Teste de hipóteses e insights do negócio
 
 ### 4.1. Hipóteses
-<p style:"text-aling: justify"> Foram testadas 10 hipóteses acerca do conjunto de dados dos imóveis, com seus resultados e descrições abaixo:</p>
+<p align="justify"> Foram testadas 10 hipóteses acerca do conjunto de dados dos imóveis, com seus resultados e descrições abaixo:</p>
 
 | Hipótese | Validação | Significado para o negócio |
 |:---------|:----------|:---------------------------|
@@ -184,32 +185,32 @@ Os relatórios terão filtros para exploração dos dados.
 
 
 ### 4.2. Insights
-<p style="text-align: justify">A análise exploratória dos dados das propriedades disponíveis para compra e revenda pela House Rocket proporciona alguns insights:</p>
+<p align="justify" >A análise exploratória dos dados das propriedades disponíveis para compra e revenda pela House Rocket proporciona alguns insights:</p>
 
 #### Insight 1: Imóveis com vista para a água
-<p style="text-align: justify">O valor de mercado dos imóveis é fortemente influenciado pela sua localização, principalmente em relação à proximidade a grandes corpos d'água. Neste portfólio, as propriedades situadas à beira dos lagos presentes na região de Seattle, WA apresentam um preço médio 214% maior que aquelas situadas distante das costas.</p>
+<p align="justify" >O valor de mercado dos imóveis é fortemente influenciado pela sua localização, principalmente em relação à proximidade a grandes corpos d'água. Neste portfólio, as propriedades situadas à beira dos lagos presentes na região de Seattle, WA apresentam um preço médio 214% maior que aquelas situadas distante das costas.</p>
 
 #### Insight 2: Imóveis que foram reformados
-<p style="text-align: justify">Reformas elevam consideravelmente o preço dos imóveis do portfólio analisado. Comparadas àquelas que não passaram por nenhum processo de renovação, as propriedades reformadas possuem preço em média 40% maiores.</p>
+<p align="justify" ">Reformas elevam consideravelmente o preço dos imóveis do portfólio analisado. Comparadas àquelas que não passaram por nenhum processo de renovação, as propriedades reformadas possuem preço em média 40% maiores.</p>
 
 #### Insight 3: Idade de construção dos imóveis
-<p style="text-align: justify">Foram analisadas as idades dos imóveis. A diferença entre o preço médio dos imóveis que foram constrídos antes e depois de 1957 (a mediana dos valores dos anos de contrução, que vão de 1900 a 2015) é de apenas 2.83%. Assim, esta variável não é significante comparada à influência dos outros atributos do conjunto de dados.</p>
+<p align="justify" >Foram analisadas as idades dos imóveis. A diferença entre o preço médio dos imóveis que foram constrídos antes e depois de 1957 (a mediana dos valores dos anos de contrução, que vão de 1900 a 2015) é de apenas 2.83%. Assim, esta variável não é significante comparada à influência dos outros atributos do conjunto de dados.</p>
 
 
 ## 5. Resultados financeiros para o negócio
-<p style="text-align: justify">A partir das considerações sobre os imóveis, levando em conta as condições físicas, estação de compra e atributos físicos, são obtidos <strong>3872</strong> propriedades recomendadas para compra. As somas dos preços de compra e venda, além como o <strong>faturamento total</strong> possível estão descritos na tabela abaixo: </p>
+<p align="justify">A partir das considerações sobre os imóveis, levando em conta as condições físicas, estação de compra e atributos físicos, são obtidos <strong>3872</strong> propriedades recomendadas para compra. As somas dos preços de compra e venda, além como o <strong>faturamento total</strong> possível estão descritos na tabela abaixo: </p>
 
 | Número de imóveis | Preço de compra total | Preço de venda total | Faturamento total |
 |:-----------------:|:---------------------:|:--------------------:|:-----------------:|
 |       3872        | \$1.522.626.895,00    | \$1.959.734.476,70   | \$437.107.581,70  |
 
-<p style="text-align: justify">Evidentemente, devido à provável impossibilidade de adquirir todos os imóveis sugeridos imediatamente, devem ser levadas em conta fatores como localização, tamanho dos imóveis, recursos financeiros disponíveis e outros para diversificação do portfólio.</p>
+<p align="justify" >Evidentemente, devido à provável impossibilidade de adquirir todos os imóveis sugeridos imediatamente, devem ser levadas em conta fatores como localização, tamanho dos imóveis, recursos financeiros disponíveis e outros para diversificação do portfólio.</p>
 
 ## 6. Conclusão
-<p style="text-align: justify">Este documento provê uma análise exploratória de um conjunto de dados de imóveis disponíveis para a compra. Por meio de uma empresa fictícia com modelo de negócio bem definido, foi possível apresentar um processo completo de limpeza, carregamento e transformação de dados. O conjunto bruto foi explicado, foram propostas premissas sobre os dados e, assim, os imóveis foram categorizados em "Comprar" ou "Não comprar". Para ajudar o público final deste estudo na análise e visualização das propriedades, foram desenvolvidos dois dashboards com tabelas, mapas e gráficos. Por fim, este documento trouxe os resultados financeiros para o negócio, apresentando o faturamento máximo do portfólio de imóveis.</p>
+<p align="justify" >Este documento provê uma análise exploratória de um conjunto de dados de imóveis disponíveis para a compra. Por meio de uma empresa fictícia com modelo de negócio bem definido, foi possível apresentar um processo completo de limpeza, carregamento e transformação de dados. O conjunto bruto foi explicado, foram propostas premissas sobre os dados e, assim, os imóveis foram categorizados em "Comprar" ou "Não comprar". Para ajudar o público final deste estudo na análise e visualização das propriedades, foram desenvolvidos dois dashboards com tabelas, mapas e gráficos. Por fim, este documento trouxe os resultados financeiros para o negócio, apresentando o faturamento máximo do portfólio de imóveis.</p>
 
 ## 7. Próximos passos
-<p style="text-align: justify">Este projeto pode ir além nas análises e visualizações já aqui desenvolvidas, incluindo intens como:</p>
+<p align="justify" >Este projeto pode ir além nas análises e visualizações já aqui desenvolvidas, incluindo intens como:</p>
 
 >- Inclusão de banheiros considerados decimais (como 3/4 de banheiro sendo um lavatório que não possui chuveiro ou banheiro), que foram arredondados como premissa neste trabalho;<br/>
 >- Refinamento do preço de venda dos imóveis, levando em conta não apenas o preço médio por região e a sazonalidade, mas também atributos físicos das propriedades;<br/>
@@ -217,23 +218,21 @@ Os relatórios terão filtros para exploração dos dados.
 
 ## 8. Tecnologias
 ### Desenvolvimento do código
-
-
 [<img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" style="height: 50px" align="left"/>](https://jupyter.org/)
-
 
 [<img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/PyCharm_Icon.svg" style="height: 50px" align="left"/>](https://www.jetbrains.com/pt-br/pycharm/)
 
-
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png" style="height: 50px" align="left"/>](https://pandas.pydata.org/)
-
 
 [<img src="https://geopandas.org/en/latest/_images/geopandas_logo.png" style="height: 40px" align="left"/>](https://geopandas.org/en/stable/)<br/><br/><br/>
 
-
 ### Construção e publicação dos dashboards
-[comment]: <> (Streamlit)
 [<img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.svg" style="height: 50px" align="left"/>](https://streamlit.io/)
 
-[comment]: <> (Heroku)
-[<img src="https://blog.back4app.com/wp-content/uploads/2020/12/O-que-e-o-Heroku.png" style="height: 50px" align="left"/>](http://heroku.com)<br/>
+[<img src="https://blog.back4app.com/wp-content/uploads/2020/12/O-que-e-o-Heroku.png" style="height: 50px" align="left"/>](http://heroku.com)<br/><br/>
+
+                                                                                                                    
+## 9. Sobre o autor
+Olá! Meu nome é Lucas Rodrigues.
+Conecte-se comigo no meu [Linkedin](https://www.linkedin.com/in/lucasrodrigues3/)
+                                                                                                                 
