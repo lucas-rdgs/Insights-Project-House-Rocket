@@ -15,7 +15,7 @@
 > - Quando e por qual preço os imóveis devem ser postos à venda?
 
 Clique no ícone para acessar os dashboards desenvolvidos neste projeto na plataforma Heroku:<br/> 
-[<img src="https://blog.back4app.com/wp-content/uploads/2020/12/O-que-e-o-Heroku.png" style="height: 50px"/>]([http://heroku.com](https://house-rocket-company-lr.herokuapp.com/))<br/>
+[<img src="https://blog.back4app.com/wp-content/uploads/2020/12/O-que-e-o-Heroku.png" style="height: 50px"/>](https://house-rocket-company-lr.herokuapp.com/)<br/>
 
 ### 1.3. Visão geral do conjunto de dados
 #### Conjunto de dados bruto
@@ -233,6 +233,5 @@ Os relatórios terão filtros para exploração dos dados.
 
                                                                                                                     
 ## 9. Sobre o autor
-Olá! Meu nome é Lucas Rodrigues.
+Olá! Meu nome é Lucas Rodrigues.<br/>
 Conecte-se comigo no meu [Linkedin](https://www.linkedin.com/in/lucasrodrigues3/)
-                                                                                                                 
