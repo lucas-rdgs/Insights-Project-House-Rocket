@@ -2,6 +2,9 @@
 
 <center><img src="https://thumbs.dreamstime.com/b/classic-view-famous-painted-ladies-san-francisco-162287344.jpg" align="center" style="height: 387.8px; width:600.0px;"/></center>
 
+Clique no ícone para acessar os dashboards desenvolvidos neste projeto:<br/> 
+[<img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.svg" style="height: 50px"/>](https://lucas-rdgs-projeto-insights-house-rocket-homepage-fb24vy.streamlit.app/)<br/>
+
 ## 1. Questão de negócio
 
 ### 1.1. Sobre a empresa
@@ -13,9 +16,6 @@
 
 > - Quais imóveis deveriam ser compradas pela House Rocket?
 > - Quando e por qual preço os imóveis devem ser postos à venda?
-
-Clique no ícone para acessar os dashboards desenvolvidos neste projeto na plataforma Heroku:<br/> 
-[<img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.svg" style="height: 50px"/>](https://lucas-rdgs-projeto-insights-house-rocket-homepage-fb24vy.streamlit.app/)<br/>
 
 ### 1.3. Visão geral do conjunto de dados
 #### Conjunto de dados bruto
@@ -222,16 +222,14 @@ Os relatórios terão filtros para exploração dos dados.
 
 [<img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/PyCharm_Icon.svg" style="height: 50px" align="left"/>](https://www.jetbrains.com/pt-br/pycharm/)
 
-[<img src="https://freepikpsd.com/file/2019/10/Python-PNG-File.png" style="height: 50px" align="left"/>](https://www.python.org/)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1024px-Python.svg.png" style="height: 50px" align="left"/>](https://www.python.org/)
                                                                                                                   
-[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png" style="height: 50px" align="left"/>](https://pandas.pydata.org/)
-
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png" style="height: 50px" align="left"/>](https://pandas.pydata.org/)                                                                                                                                           
+                                                                                                                                                  
 [<img src="https://geopandas.org/en/latest/_images/geopandas_logo.png" style="height: 40px" align="left"/>](https://geopandas.org/en/stable/)<br/><br/><br/>
 
 ### Construção e publicação dos dashboards
-[<img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.svg" style="height: 50px" align="left"/>](https://streamlit.io/)
-
-[<img src="https://blog.back4app.com/wp-content/uploads/2020/12/O-que-e-o-Heroku.png" style="height: 50px" align="left"/>](http://heroku.com)<br/><br/>
+[<img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.svg" style="height: 50px" align="left"/>](https://streamlit.io/)<br/><br/>
 
                                                                                                                     
 ## 9. Sobre o autor
